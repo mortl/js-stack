@@ -18,7 +18,8 @@
   },
   "babel": {
     "presets": [
-      "latest"
+      "latest",
+      "react"
     ]
   },
   "keywords": [],

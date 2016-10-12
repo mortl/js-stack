@@ -20,6 +20,7 @@ gulp.task('lint', () =>
   gulp.src([
     'gulpfile.babel.js',
     'src/**/*.js',
+    'src/**/*.jsx'
   ])
     .pipe(eslint())
     .pipe(eslint.format())
@@ -27,7 +28,7 @@ gulp.task('lint', () =>
 );
 
 gulp.task('build-client', ['lint'], () =>
-  browserify({ entries: './src/client/app.js', debug: true })
+  browserify({ entries: './src/client/app.jsx', debug: true })
     .transform(babelify)
     .bundle()
     .pipe(source('client-bundle.js'))
