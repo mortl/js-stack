@@ -142,3 +142,4 @@ bower_components
 
 ### Lib folder ###
 lib
+dist/client-bundle.js
