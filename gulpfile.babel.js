@@ -20,7 +20,7 @@ gulp.task('lint', () =>
   gulp.src([
     'gulpfile.babel.js',
     'src/**/*.js',
-    'src/**/*.jsx'
+    'src/**/*.jsx',
   ])
     .pipe(eslint())
     .pipe(eslint.format())
@@ -34,4 +34,3 @@ gulp.task('build-client', ['lint'], () =>
     .pipe(source('client-bundle.js'))
     .pipe(gulp.dest('dist'))
 );
-

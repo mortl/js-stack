@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
+
 import Dog from '../shared/dog';
 
-const max = new Dog('Max');
+const toby = new Dog('Toby');
 
-
-console.log(max.bark());
+console.log(toby.bark());
